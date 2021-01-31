@@ -89,7 +89,6 @@
     <Folder Include="YoutubePodcasts\static\login\vendor\jquery\" />
     <Folder Include="YoutubePodcasts\static\login\vendor\perfect-scrollbar\" />
     <Folder Include="YoutubePodcasts\static\login\vendor\select2\" />
-    <Folder Include="YoutubePodcasts\templates\yp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -159,10 +158,6 @@
     <Content Include="YoutubePodcasts\static\scripts\respond.js" />
     <Content Include="YoutubePodcasts\static\scripts\respond.min.js" />
     <Content Include="YoutubePodcasts\static\scripts\_references.js" />
-    <Content Include="YoutubePodcasts\templates\about.html" />
-    <Content Include="YoutubePodcasts\templates\contact.html" />
-    <Content Include="YoutubePodcasts\templates\index.html" />
-    <Content Include="YoutubePodcasts\templates\layout.html" />
     <Content Include="YoutubePodcasts\static\login\css\main.css" />
     <Content Include="YoutubePodcasts\static\login\css\util.css" />
     <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -292,12 +287,6 @@
     <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.js" />
     <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.min.css" />
     <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.min.js" />
-    <Content Include="YoutubePodcasts\templates\yp\add.html" />
-    <Content Include="YoutubePodcasts\templates\yp\contact.html" />
-    <Content Include="YoutubePodcasts\templates\yp\index.html" />
-    <Content Include="YoutubePodcasts\templates\yp\about.html" />
-    <Content Include="YoutubePodcasts\templates\yp\login.html" />
-    <Content Include="YoutubePodcasts\templates\yp\signup.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

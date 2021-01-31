@@ -1,13 +1,10 @@
-"""
-Routes and views for the flask application.
-"""
-
 from datetime import datetime
 from flask import render_template, request, redirect
 from YoutubePodcasts import app, youtube, db
 from YoutubePodcasts.models import Users, Videos
 from YoutubePodcasts.login import *
 import flask_login
+import hashlib
 
 @app.route('/')
 @app.route('/home')
@@ -24,34 +21,36 @@ def home():
 
     return render_template(
         'yp2/index.html',
-        title='Youtube Podcasts',
+        title='Favorite Videos',
         user_name=flask_login.current_user.id,
         videos=videos,
         bg_video_url='static/home/video/nvidia-rtx.mp4')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    login_page = render_template(
+    login_page_error = render_template(
         'yp2/login.html',
-        title='YP - Login')
+        title='FV - Login',
+        error_message='Wrong username or password')
 
     if request.method == 'GET':
-        return login_page
+        return render_template(
+            'yp2/login.html',
+            title='FV - Login')
 
     username = request.form['username']
     record = Users.query.filter_by(username=username).first()
 
     if record is None:
-        print('user is None')
-        return login_page
+        return login_page_error
 
-    if request.form['password'] == record.password:
+    if hashlib.sha256(request.form['password'].encode()).hexdigest() == record.password:
         user = User()
         user.id = username
         flask_login.login_user(user)
         return redirect('/')
 
-    return login_page
+    return login_page_error
 
 @app.route('/logout')
 @flask_login.login_required
@@ -79,25 +78,27 @@ def add():
         return redirect("/")
 
     return render_template(
-        'yp2/add.html')
+        'yp2/add.html',
+        title='FV - videos')
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == 'GET':
         return render_template(
             'yp2/signup.html',
-            title='Youtube Podcasts - Signup')
+            title='FV - Signup')
     login = request.form['username']
     password = request.form['password']
     if login and password:
         if Users.query.filter_by(username=login).first() is not None:
             return render_template(
                 'yp2/signup.html',
-                title = 'YP - Signup',
+                title = 'VF - Signup',
                 error_message='This name is taken. Come up with another')
-        Users.create(Users(login, password))
+        Users.create(Users(login, hashlib.sha256(password.encode()).hexdigest()))
         user = User()
         user.id = login
         flask_login.login_user(user)
+        print(f'New user created: {login}')
     return redirect('/')
 
