@@ -1,0 +1,16 @@
+#title {
+    text-align: center;
+    font-size: 4em;
+    font-weight: inherit;
+    font-family: 'Segoe UI Symbol';
+}
+
+.podcast-item {
+    background-color: lightgray;
+    margin: 5%;
+    padding-bottom: 20%;
+}
+
+.thumbnail {
+    width: 100%;
+}

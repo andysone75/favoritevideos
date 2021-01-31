@@ -1,0 +1,14 @@
+﻿{% extends "yp2/layout.html" %}
+{% block content %}
+<div style="margin:5%">
+    <form action="" method="post">
+        Paste here youtube link
+        <input type="text" name="link" value="" />
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</div>
+{% endblock %}

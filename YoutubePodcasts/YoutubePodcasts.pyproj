@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c5aa5be8-a238-4c14-83c5-6355ab768c9b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>YoutubePodcasts</Name>
+    <RootNamespace>YoutubePodcasts</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="YoutubePodcasts\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YoutubePodcasts\login.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YoutubePodcasts\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YoutubePodcasts\youtube.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YoutubePodcasts\__init__.py" />
+    <Compile Include="YoutubePodcasts\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="YoutubePodcasts\" />
+    <Folder Include="YoutubePodcasts\static\" />
+    <Folder Include="YoutubePodcasts\static\content\" />
+    <Folder Include="YoutubePodcasts\static\fonts\" />
+    <Folder Include="YoutubePodcasts\static\home\css\" />
+    <Folder Include="YoutubePodcasts\static\home\fontawesome\" />
+    <Folder Include="YoutubePodcasts\static\home\fontawesome\css\" />
+    <Folder Include="YoutubePodcasts\static\home\fontawesome\webfonts\" />
+    <Folder Include="YoutubePodcasts\static\home\img\" />
+    <Folder Include="YoutubePodcasts\static\home\js\" />
+    <Folder Include="YoutubePodcasts\static\home\video\" />
+    <Folder Include="YoutubePodcasts\static\login\" />
+    <Folder Include="YoutubePodcasts\static\home\" />
+    <Folder Include="YoutubePodcasts\static\scripts\" />
+    <Folder Include="YoutubePodcasts\templates\" />
+    <Folder Include="YoutubePodcasts\templates\yp2\" />
+    <Folder Include="YoutubePodcasts\static\login\css\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\WebFont\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\montserrat\" />
+    <Folder Include="YoutubePodcasts\static\login\fonts\poppins\" />
+    <Folder Include="YoutubePodcasts\static\login\images\" />
+    <Folder Include="YoutubePodcasts\static\login\images\icons\" />
+    <Folder Include="YoutubePodcasts\static\login\js\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\animate\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\animsition\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\animsition\css\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\animsition\js\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\bootstrap\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\bootstrap\css\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\bootstrap\js\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\countdowntime\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\css-hamburgers\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\daterangepicker\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\jquery\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\perfect-scrollbar\" />
+    <Folder Include="YoutubePodcasts\static\login\vendor\select2\" />
+    <Folder Include="YoutubePodcasts\templates\yp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="YoutubePodcasts\static\content\bootstrap.css" />
+    <Content Include="YoutubePodcasts\static\content\bootstrap.min.css" />
+    <Content Include="YoutubePodcasts\static\content\site.css" />
+    <Content Include="YoutubePodcasts\static\content\yp.css" />
+    <Content Include="YoutubePodcasts\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="YoutubePodcasts\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="YoutubePodcasts\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="YoutubePodcasts\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="YoutubePodcasts\static\home\css\bootstrap.min.css" />
+    <Content Include="YoutubePodcasts\static\home\css\templatemo-video-catalog.css" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\css\all.min.css" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\LICENSE.txt" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="YoutubePodcasts\static\home\fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="YoutubePodcasts\static\home\img\about-1.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\about-2.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\about-3.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\contact-1.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\contact-2.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\select-arrow.png" />
+    <Content Include="YoutubePodcasts\static\home\img\testimonial-1.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\testimonial-2.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\testimonial-3.png" />
+    <Content Include="YoutubePodcasts\static\home\img\testimonial-4.png" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-01.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-02.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-03.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-04.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-05.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-06.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-07.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-08.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\tn-09.jpg" />
+    <Content Include="YoutubePodcasts\static\home\img\video-detail-1.jpg" />
+    <Content Include="YoutubePodcasts\static\home\js\bootstrap.min.js" />
+    <Content Include="YoutubePodcasts\static\home\js\jquery-3.4.1.min.js" />
+    <Content Include="YoutubePodcasts\static\home\js\parallax.min.js" />
+    <Content Include="YoutubePodcasts\static\home\video\wheat-field.mp4" />
+    <Content Include="YoutubePodcasts\static\scripts\bootstrap.js" />
+    <Content Include="YoutubePodcasts\static\scripts\bootstrap.min.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery-1.10.2.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery.validate.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery.validate.min.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="YoutubePodcasts\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="YoutubePodcasts\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="YoutubePodcasts\static\scripts\respond.js" />
+    <Content Include="YoutubePodcasts\static\scripts\respond.min.js" />
+    <Content Include="YoutubePodcasts\static\scripts\_references.js" />
+    <Content Include="YoutubePodcasts\templates\about.html" />
+    <Content Include="YoutubePodcasts\templates\contact.html" />
+    <Content Include="YoutubePodcasts\templates\index.html" />
+    <Content Include="YoutubePodcasts\templates\layout.html" />
+    <Content Include="YoutubePodcasts\static\login\css\main.css" />
+    <Content Include="YoutubePodcasts\static\login\css\util.css" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="YoutubePodcasts\static\login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\montserrat\OFL.txt" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="YoutubePodcasts\static\login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="YoutubePodcasts\static\login\images\bg-01.jpg" />
+    <Content Include="YoutubePodcasts\static\login\images\icons\favicon.ico" />
+    <Content Include="YoutubePodcasts\static\login\images\icons\icon-google.png" />
+    <Content Include="YoutubePodcasts\static\login\images\icons\map-marker.png" />
+    <Content Include="YoutubePodcasts\static\login\images\icons\symbol-01.png" />
+    <Content Include="YoutubePodcasts\templates\yp2\add.html" />
+    <Content Include="YoutubePodcasts\templates\yp2\index.html" />
+    <Content Include="YoutubePodcasts\templates\yp2\layout.html" />
+    <Content Include="YoutubePodcasts\templates\yp2\signup.html" />
+    <Content Include="YoutubePodcasts\templates\yp2\login.html" />
+    <Content Include="YoutubePodcasts\static\login\js\main.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\animate\animate.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\animsition\css\animsition.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\animsition\css\animsition.min.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\animsition\js\animsition.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\animsition\js\animsition.min.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\js\popper.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\countdowntime\countdowntime.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\daterangepicker\moment.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\daterangepicker\moment.min.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.js" />
+    <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.min.css" />
+    <Content Include="YoutubePodcasts\static\login\vendor\select2\select2.min.js" />
+    <Content Include="YoutubePodcasts\templates\yp\add.html" />
+    <Content Include="YoutubePodcasts\templates\yp\contact.html" />
+    <Content Include="YoutubePodcasts\templates\yp\index.html" />
+    <Content Include="YoutubePodcasts\templates\yp\about.html" />
+    <Content Include="YoutubePodcasts\templates\yp\login.html" />
+    <Content Include="YoutubePodcasts\templates\yp\signup.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.8</Version>
+      <Description>env (Python 3.8)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

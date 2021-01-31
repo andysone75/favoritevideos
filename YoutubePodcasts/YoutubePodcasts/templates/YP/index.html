@@ -1,0 +1,14 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+<div><strong>YoutubePodcasts</strong> - Home Page</div>
+{% for file, prop in podcasts.items() %}
+<div class="podcast-item">
+    <img src="{{ prop.thumbnails.0.url }}" alt="{{ prop.title }}" />
+    <a href="{{ prop.uploader_url }}"><b>{{ prop.uploader }}</b></a></br>
+    <a href="{{ prop.webpage_url }}">{{ prop.title }}</a>
+    <audio controls>
+        <source src="{{ file }}" />
+    </audio>
+</div>
+{% endfor %}
+{% endblock %}
